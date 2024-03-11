@@ -12,20 +12,21 @@ Hello everybody! 👋
 - Responsive layout for all devices
   
 ## 📷 Screenshots 
-🍄  
-<br />
+🍄  This screenshot encourage visitors to stay informed about your project by providing a subscription form. <br />
+
 <img width="1443" alt="Ekran Resmi 2024-03-08 14 24 39" src="https://github.com/tucecifci/Coming-Soon-Page/assets/151346784/f00b6e94-1288-44bb-910d-474c50a41f58">
 
+<br />
+<br />
 
-🍄
+🍄 Allow them to sign up with their email address to receive updates and notifications, ensuring they don't miss out on any important announcements.
 
 <img width="1443" alt="Ekran Resmi 2024-03-08 14 24 57" src="https://github.com/tucecifci/Coming-Soon-Page/assets/151346784/b0d3e803-08e6-411b-95b1-5c51f74ba358">
+<br />
 
-
-🍄 
-
-
-https://github.com/tucecifci/Coming-Soon-Page/assets/151346784/56d7e121-b39e-4eea-974a-8fd391536cb6
+<br />
+🍄 Get a sneak peek into Coming Soon Page with this introductory video! Learn more about the features and benefits of our "Coming Soon" page template and discover how it can help you build anticipation for your upcoming project or product launch.
+<br />
 
 
 ## 🔗 Links 
