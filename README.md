@@ -29,6 +29,14 @@ Hello everybody! 👋
 <br />
 
 
+
+https://github.com/tucecifci/Coming-Soon-Page/assets/151346784/2dbbbff4-43f1-4dd1-8a62-a40da490983e
+
+
+
+
+
+
 ## 🔗 Links 
 - Live Site URL: https://tucecifci.github.io/Coming-Soon-Page/
 
