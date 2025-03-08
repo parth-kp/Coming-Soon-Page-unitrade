@@ -62,6 +62,45 @@
           max-width: 60%; /* Adjust for small screens */
         }
       }
+      .custom-alert {
+        display: none; /* Initially hidden */
+        position: fixed;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #28a745; /* Green success color */
+        color: white;
+        padding: 15px 25px;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: bold;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        text-align: center;
+      }
+
+      .custom-alert.show {
+        display: block;
+        animation: fadeIn 0.3s ease-out, fadeOut 0.5s ease-in 2.5s forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -60%);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+          transform: translate(-50%, -40%);
+        }
+      }
     </style>
   </head>
 
@@ -77,7 +116,9 @@
     </header>
     <main>
       <div class="container" style="font-size: 2vw">
-        <h1 style="font-size: 3vw; font-weight: 300;">We are launching <span>soon!</span></h1>
+        <h1 style="font-size: 3vw; font-weight: 300">
+          We are launching <span>soon!</span>
+        </h1>
         <p>Subscribe and get notified</p>
         <input
           type="email"
@@ -88,7 +129,7 @@
           id="errorMessage"
           style="
             color: red;
-            display: block;
+            display: none;
             font-size: 0.6rem;
             font-style: italic;
             margin-top: 10px;
@@ -108,6 +149,9 @@
           style="max-width: 50%; margin-top: 30px"
         />
       </div>
+      <div id="customAlert" class="custom-alert">
+        Thank you for subscribing!
+      </div>
 
       <footer></footer>
     </main>
@@ -118,13 +162,22 @@
         .addEventListener("click", function () {
           const emailInput = document.getElementById("emailInput");
           const errorMessage = document.getElementById("errorMessage");
+          const customAlert = document.getElementById("customAlert");
           const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
+          console.log(emailInput.value);
           if (!emailPattern.test(emailInput.value)) {
             errorMessage.style.display = "block";
           } else {
             errorMessage.style.display = "none";
-            alert("Thank you for subscribing!");
+            emailInput.value = "";
+
+            // Show the custom alert
+            customAlert.classList.add("show");
+
+            // Hide the alert after 3 seconds
+            setTimeout(() => {
+              customAlert.classList.remove("show");
+            }, 3000);
           }
         });
     </script>
